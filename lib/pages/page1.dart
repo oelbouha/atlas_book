@@ -157,7 +157,7 @@ class _TextBlock extends StatelessWidget {
           PageTextReveal(
             delay: const Duration(milliseconds: 10),
             child: Text(
-              'DÉcouvrez les Épisodes de\nla sÉrie "The Saharan Flora"'.toUpperCase(),
+              'DÉcouvrez les Épisodes de\nla sÉrie «The Saharan Flora»'.toUpperCase(),
               softWrap: true,
               textAlign: TextAlign.left,
               style: TextStyle(

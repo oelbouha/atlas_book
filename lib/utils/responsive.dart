@@ -30,8 +30,8 @@ class ResponsiveSizes {
     }
 
     return ResponsiveSizes(
-      headingSize:    scaled(46.0, 22.0, 60.0),
-      headingSize3:   scaled(42.0, 18.0, 50.0), // ← smaller than headingSize
+      headingSize:    scaled(42.0, 22.0, 58.0),
+      headingSize3:   scaled(40.0, 18.0, 50.0), // ← smaller than headingSize
       bodySize:       scaled(28.0, 14.0, 34.0),
       bodySize2:      scaled(24.0, 12.0, 30.0),
       logoHeight:     scaled(92.0, 44.0, 122.0),

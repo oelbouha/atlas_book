@@ -255,7 +255,7 @@ class _LeftPanel extends StatelessWidget {
         PageTextReveal(
           delay: const Duration(milliseconds: 10),
           child: Text(
-            'DÉcouvrez les Épisodes de\nla sÉrie "The Saharan Flora"'.toUpperCase(),
+            'DÉcouvrez les Épisodes de\nla sÉrie «The Saharan Flora»'.toUpperCase(),
             style: TextStyle(
               fontFamily: 'PlayfairDisplaySC',
               fontSize: headingSize,
