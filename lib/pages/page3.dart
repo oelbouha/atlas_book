@@ -48,7 +48,7 @@ const String _cover5 = 'assets/page 3/episodes/episode_5.png';
 const String _video5 = 'assets/page 3/videos/aagaya.mp4';
 
 const String _cover6 = 'assets/page 3/episodes/episode_6.png';
-const String _video6 = 'assets/page 3/videos/tamarix.mp4';
+const String _video6 = 'assets/page 3/videos/chihia.mp4';
 
 
 final List<EpisodeItem> _episodes = [
@@ -154,7 +154,17 @@ class _Page3State extends State<Page3> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Image.asset(_logo, height: logoHeight),
+                                Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    GestureDetector(
+                                      onTap: () => Navigator.of(context).pop(),
+                                      child: const Icon(Icons.arrow_back_ios_rounded, color: Colors.white, size: 32),
+                                    ),
+                                    const SizedBox(width: 24),
+                                    Image.asset(_logo, height: logoHeight),
+                                  ],
+                                ),
                                 SizedBox(height: h * 0.03),
                                 Expanded(
                                   child: Align(
@@ -195,7 +205,17 @@ class _Page3State extends State<Page3> {
                     Padding(
                       padding: EdgeInsets.fromLTRB(
                           w * 0.07, h * 0.03, w * 0.07, 0),
-                      child: Image.asset(_logo, height: logoHeight),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          GestureDetector(
+                            onTap: () => Navigator.of(context).pop(),
+                            child: const Icon(Icons.arrow_back_ios_rounded, color: Colors.white, size: 22),
+                          ),
+                          const SizedBox(width: 16),
+                          Image.asset(_logo, height: logoHeight),
+                        ],
+                      ),
                     ),
                     SizedBox(height: h * 0.04),
                     Padding(

@@ -43,9 +43,19 @@ class Page2 extends StatelessWidget {
                       // Logo
                       Align(
                         alignment: Alignment.centerLeft,
-                        child: Image.asset(
-                          'assets/logo atlas.png',
-                          height: responsive.logoHeight,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            GestureDetector(
+                              onTap: () => Navigator.of(context).pop(),
+                              child: Icon(Icons.arrow_back_ios_rounded, color: Colors.white, size: w >= 900 ? 32 : 22),
+                            ),
+                            SizedBox(width: w >= 900 ? 24 : 16),
+                            Image.asset(
+                              'assets/logo atlas.png',
+                              height: responsive.logoHeight,
+                            ),
+                          ],
                         ),
                       ),
 
